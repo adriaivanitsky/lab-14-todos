@@ -5,3 +5,13 @@ export function generateUser(formData){
         todos: {}
     };
 }
+
+export function setUser(userObject){
+    const userString = JSON.stringify(userObject);
+    return localStorage.setItem('USER', userString);
+}
+
+export function getUser(){
+    const userString = localStorage.getItem('USER');
+    return JSON.parse(userString);
+}
