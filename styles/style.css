@@ -30,7 +30,12 @@ input[type=radio]:checked +  img {
     padding: 10px;
 }
 
-
 img {
     width: 100px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
